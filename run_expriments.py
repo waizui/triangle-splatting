@@ -35,7 +35,7 @@ class Experiment:
         )
 
         overrides.setdefault(
-            "souce_path",
+            "source_path",
             str(PROJECT_PARENT / "dataset" / "assets" / slugify(self.name)),
         )
         return overrides
@@ -108,14 +108,14 @@ EXPERIMENTS: list[Experiment] = [
         name="truck",
         args={},
     ),
-    Experiment(
-        name="drjohnson",
-        args={},
-    ),
-    Experiment(
-        name="playroom",
-        args={},
-    ),
+    # Experiment(
+    #     name="drjohnson",
+    #     args={},
+    # ),
+    # Experiment(
+    #     name="playroom",
+    #     args={},
+    # ),
 ]
 
 
