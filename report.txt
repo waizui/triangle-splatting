@@ -1,0 +1,380 @@
+=== Running experiment: bicycle ===                                                                   
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 4 --model_path /home/guest/repos/triangle-splatting/output/experiments/bicy
+cle --source_path /home/guest/repos/dataset/assets/bicycle
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/bicycle                                                                                                                                  
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/bicycle [06/11 17:38:41]                                                                                                             
+Tensorboard not available: not logging progress [06/11 17:38:41]                                                                                                                                            
+Reading camera 194/194 [06/11 17:38:42]                                                               
+Loading Training Cameras [06/11 17:38:42]                                                             
+Loading Test Cameras [06/11 17:39:17]                                                                 
+Training progress:  23%|███████▉                          | 7000/30000 [03:49<22:59, 16.68it/s, Loss=0.11434]                                                                                               
+[ITER 7000] Evaluating test: L1 0.05154962062835693 PSNR 22.27332908630371 SSIM 0.5666273283958435 LPIPS 0.4086985194683075 [06/11 17:43:15]
+
+[ITER 7000] Evaluating train: L1 0.049188132584095004 PSNR 21.303761672973636 SSIM 0.645079517364502 LPIPS 0.36501277685165406 [06/11 17:43:16]
+
+[ITER 7000] Saving Triangles [06/11 17:43:16]                                                         
+Training progress: 100%|█████████████████████████████████| 30000/30000 [59:16<00:00,  8.43it/s, Loss=0.05076]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.03949361763894558 PSNR 25.04820785522461 SSIM 0.7669866609573365 LPIPS 0.19378595232963564 [06/11 18:38:43]
+
+[ITER 30000] Evaluating train: L1 0.02943464852869511 PSNR 25.941678619384767 SSIM 0.8713873744010926 LPIPS 0.14876713305711747 [06/11 18:38:43]
+
+[ITER 30000] Saving Triangles [06/11 18:38:43]                                                        
+Training is done [06/11 18:38:48]                                                                     
+
+Training complete. [06/11 18:38:48]              
+
+=== Running experiment: garden ===                                                                    
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 4 --model_path /home/guest/repos/triangle-splatting/output/experiments/gard
+en --source_path /home/guest/repos/dataset/assets/garden
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/garden                                                                                                                                   
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/garden [06/11 18:38:51]                                                                                                              
+Tensorboard not available: not logging progress [06/11 18:38:51]                                                                                                                                            
+Reading camera 185/185 [06/11 18:38:52]                                                               
+Loading Training Cameras [06/11 18:38:52]                                                             
+Loading Test Cameras [06/11 18:39:26]                                                                 
+Training progress:  23%|███████▉                          | 7000/30000 [07:16<53:32,  7.16it/s, Loss=0.07482]                                                                                               
+[ITER 7000] Evaluating test: L1 0.037043485014388956 PSNR 25.15938560167948 SSIM 0.7597321718931198 LPIPS 0.2330601830035448 [06/11 18:46:50]
+
+[ITER 7000] Evaluating train: L1 0.031095707044005397 PSNR 26.983509445190432 SSIM 0.7924439430236817 LPIPS 0.21603040397167206 [06/11 18:46:51]
+
+[ITER 7000] Saving Triangles [06/11 18:46:51]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:10:09<00:00,  7.13it/s, Loss=0.03465]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.027365177559355892 PSNR 27.49944241841634 SSIM 0.8687190612157185 LPIPS 0.10271808567146459 [06/11 19:49:43]
+
+[ITER 30000] Evaluating train: L1 0.016380538605153563 PSNR 32.28649635314942 SSIM 0.9427773118019105 LPIPS 0.061141011863946916 [06/11 19:49:44]
+
+[ITER 30000] Saving Triangles [06/11 19:49:44]                                                        
+Training is done [06/11 19:49:49]                                                                     
+
+Training complete. [06/11 19:49:49]                  
+
+=== Running experiment: stump ===                                                                     
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 4 --model_path /home/guest/repos/triangle-splatting/output/experiments/stum
+p --source_path /home/guest/repos/dataset/assets/stump
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/stump                                                                                                                                    
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/stump [06/11 19:49:52]                                                                                                               
+Tensorboard not available: not logging progress [06/11 19:49:52]                                                                                                                                            
+Reading camera 125/125 [06/11 19:49:52]                                                               
+Loading Training Cameras [06/11 19:49:52]                                                             
+Loading Test Cameras [06/11 19:50:13]                                                                 
+Training progress:  23%|███████▉                          | 7000/30000 [03:09<15:28, 24.78it/s, Loss=0.11508]                                                                                               
+[ITER 7000] Evaluating test: L1 0.0435552962590009 PSNR 24.24777352809906 SSIM 0.615598801523447 LPIPS 0.3934743646532297 [06/11 19:53:28]
+
+[ITER 7000] Evaluating train: L1 0.038125081360340124 PSNR 24.15851287841797 SSIM 0.6918846964836121 LPIPS 0.3584226489067078 [06/11 19:53:28]
+
+[ITER 7000] Saving Triangles [06/11 19:53:28]                                                         
+Training progress: 100%|█████████████████████████████████| 30000/30000 [58:07<00:00,  8.60it/s, Loss=0.02223]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.03356841753702611 PSNR 26.477251291275024 SSIM 0.7636229880154133 LPIPS 0.21372317615896463 [06/11 20:48:26]
+
+[ITER 30000] Evaluating train: L1 0.016679703071713448 PSNR 31.246192169189456 SSIM 0.9288470029830933 LPIPS 0.10092171877622605 [06/11 20:48:26]
+
+[ITER 30000] Saving Triangles [06/11 20:48:26]                                                        
+Training is done [06/11 20:48:31]                                                                     
+
+Training complete. [06/11 20:48:31]                         
+
+=== Running experiment: bonsai ===                                                                    
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 2 --model_path /home/guest/repos/triangle-splatting/output/experiments/bons
+ai --source_path /home/guest/repos/dataset/assets/bonsai
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/bonsai                                                                                                                                   
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/bonsai [06/11 20:48:34]                                                                                                              
+Tensorboard not available: not logging progress [06/11 20:48:34]                                                                                                                                            
+Reading camera 292/292 [06/11 20:48:35]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [06/11 20:48:35]                                                                                                        
+Loading Training Cameras [06/11 20:48:35]                                                             
+Loading Test Cameras [06/11 20:48:57]                                                                 
+Training progress:  23%|███████▍                        | 7000/30000 [11:54<1:14:45,  5.13it/s, Loss=0.03067]                                                                                               
+[ITER 7000] Evaluating test: L1 0.02128084665919478 PSNR 28.703060150146484 SSIM 0.9080869942098051 LPIPS 0.2121736125366108 [06/11 21:01:02]
+
+[ITER 7000] Evaluating train: L1 0.017267815582454205 PSNR 29.935239791870117 SSIM 0.92256817817688 LPIPS 0.1846292704343796 [06/11 21:01:02]
+
+[ITER 7000] Saving Triangles [06/11 21:01:02]                                                         
+Training progress:  72%|██████████████████████▎        | 21570/30000 [1:02:24<30:58,  4.53it/s, Loss=0.02271]^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[
+B^[[B^[[B^[[B^Training progress: 100%|███████████████████████████████| 30000/30000 [1:26:19<00:00,  5.79it/s, Loss=0.01620]
+
+[ITER 30000] Evaluating test: L1 0.014453586946065362 PSNR 32.22623969413139 SSIM 0.9507712174106289 LPIPS 0.14004211389535182 [06/11 22:15:26]
+
+[ITER 30000] Evaluating train: L1 0.010527170822024347 PSNR 34.56827583312988 SSIM 0.9668185591697693 LPIPS 0.10360031723976136 [06/11 22:15:27]
+
+[ITER 30000] Saving Triangles [06/11 22:15:27]                                                        
+Training is done [06/11 22:15:31]                                                                     
+
+Training complete. [06/11 22:15:31]                          
+
+
+== Running experiment: counter ===                                                                   
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 2 --model_path /home/guest/repos/triangle-splatting/output/experiments/coun
+ter --source_path /home/guest/repos/dataset/assets/counter
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/counter                                                                                                                                  
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/counter [06/11 22:15:35]                                                                                                             
+Tensorboard not available: not logging progress [06/11 22:15:35]                                                                                                                                            
+Reading camera 240/240 [06/11 22:15:35]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [06/11 22:15:35]                                                                                                        
+Loading Training Cameras [06/11 22:15:36]                                                             
+Loading Test Cameras [06/11 22:15:54]                                                                 
+Training progress:  23%|███████▍                        | 7000/30000 [13:09<1:29:58,  4.26it/s, Loss=0.05685]                                                                                               
+[ITER 7000] Evaluating test: L1 0.027488953061401842 PSNR 26.094310887654622 SSIM 0.8355332434177398 LPIPS 0.2842084964116414 [06/11 22:29:12]
+
+[ITER 7000] Evaluating train: L1 0.021349536255002022 PSNR 28.0298454284668 SSIM 0.8743829369544983 LPIPS 0.2479881823062897 [06/11 22:29:12]
+
+[ITER 7000] Saving Triangles [06/11 22:29:12]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:37:07<00:00,  5.15it/s, Loss=0.01843]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.018127935659140348 PSNR 28.948815282185873 SSIM 0.9150831381479899 LPIPS 0.15471679717302322 [06/11 23:53:10]
+
+[ITER 30000] Evaluating train: L1 0.011758980713784695 PSNR 32.56128463745117 SSIM 0.9535171866416932 LPIPS 0.11120118200778961 [06/11 23:53:11]
+
+[ITER 30000] Saving Triangles [06/11 23:53:11]                                                        
+Training is done [06/11 23:53:15]                                                                     
+
+Training complete. [06/11 23:53:15]
+
+=== Running experiment: room ===                                                                      
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 2 --model_path /home/guest/repos/triangle-splatting/output/experiments/room
+ --source_path /home/guest/repos/dataset/assets/room
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/room                                                                                                                                     
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/room [06/11 23:53:18]                                                                                                                
+Tensorboard not available: not logging progress [06/11 23:53:18]                                                                                                                                            
+Reading camera 311/311 [06/11 23:53:19]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [06/11 23:53:19]                                                                                                        
+Loading Training Cameras [06/11 23:53:19]                                                             
+Loading Test Cameras [06/11 23:53:41]                                                                 
+Training progress:  23%|███████▉                          | 7000/30000 [08:45<58:01,  6.61it/s, Loss=0.03699]                                                                                               
+[ITER 7000] Evaluating test: L1 0.0211446422080581 PSNR 29.411506310487404 SSIM 0.8979692871753986 LPIPS 0.23851601970501435 [07/11 00:02:36]
+
+[ITER 7000] Evaluating train: L1 0.016443217918276787 PSNR 31.824066162109375 SSIM 0.9098949193954469 LPIPS 0.2320022761821747 [07/11 00:02:37]
+
+[ITER 7000] Saving Triangles [07/11 00:02:37]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:18:46<00:00,  6.35it/s, Loss=0.01969]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.017655584985055983 PSNR 31.178798724443485 SSIM 0.9323438023909544 LPIPS 0.1609263139275404 [07/11 01:12:37]
+
+[ITER 30000] Evaluating train: L1 0.011910783126950264 PSNR 34.920464324951176 SSIM 0.9564327359199525 LPIPS 0.1345991313457489 [07/11 01:12:38]
+
+[ITER 30000] Saving Triangles [07/11 01:12:38]                                                        
+Training is done [07/11 01:12:42]                                                                     
+
+Training complete. [07/11 01:12:42]                        
+
+
+=== Running experiment: kitchen ===                                                                   
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 2 --model_path /home/guest/repos/triangle-splatting/output/experiments/kitc
+hen --source_path /home/guest/repos/dataset/assets/kitchen
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/kitchen                                                                                                                                  
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/kitchen [07/11 01:12:45]                                                                                                             
+Tensorboard not available: not logging progress [07/11 01:12:45]                                                                                                                                            
+Reading camera 279/279 [07/11 01:12:46]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [07/11 01:12:46]                                                                                                        
+Loading Training Cameras [07/11 01:12:47]                                                             
+Loading Test Cameras [07/11 01:13:08]                                                                 
+Training progress:  23%|███████▍                        | 7000/30000 [16:14<1:31:13,  4.20it/s, Loss=0.05514]                                                                                               
+[ITER 7000] Evaluating test: L1 0.02766238387141909 PSNR 27.571730586460657 SSIM 0.841554686001369 LPIPS 0.22718261395181927 [07/11 01:29:32]
+
+[ITER 7000] Evaluating train: L1 0.025614461302757265 PSNR 28.235036087036136 SSIM 0.8497532606124878 LPIPS 0.23058958053588868 [07/11 01:29:33]
+
+[ITER 7000] Saving Triangles [07/11 01:29:33]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:35:27<00:00,  5.24it/s, Loss=0.01911]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.016946465096303393 PSNR 31.301890182495118 SSIM 0.9324323211397443 LPIPS 0.10816718701805386 [07/11 02:48:46]
+
+[ITER 30000] Evaluating train: L1 0.011449008248746395 PSNR 34.44681396484375 SSIM 0.9645924329757691 LPIPS 0.06960673332214355 [07/11 02:48:47]
+
+[ITER 30000] Saving Triangles [07/11 02:48:47]                                                        
+Training is done [07/11 02:48:50]                                                                     
+
+Training complete. [07/11 02:48:50]           
+
+
+=== Running experiment: train ===                                                                     
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 1 --model_path /home/guest/repos/triangle-splatting/output/experiments/trai
+n --source_path /home/guest/repos/dataset/assets/train
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/train                                                                                                                                    
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/train [07/11 02:48:54]                                                                                                               
+Tensorboard not available: not logging progress [07/11 02:48:54]                                                                                                                                            
+Reading camera 301/301 [07/11 02:48:54]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [07/11 02:48:54]                                                                                                        
+Loading Training Cameras [07/11 02:48:55]                                                             
+Loading Test Cameras [07/11 02:48:56]                                                                 
+Scene is large, we increase the threshold [07/11 02:48:56]                                                                                                                                                  
+Training progress:  23%|███████▉                          | 7000/30000 [07:03<51:39,  7.42it/s, Loss=0.11617]                                                                                               
+[ITER 7000] Evaluating test: L1 0.08637178003003722 PSNR 18.835464201475443 SSIM 0.667496424756552 LPIPS 0.3867267503550178 [07/11 02:56:03]
+
+[ITER 7000] Evaluating train: L1 0.0675579808652401 PSNR 20.09511070251465 SSIM 0.6998015284538269 LPIPS 0.3758968591690064 [07/11 02:56:03]
+
+[ITER 7000] Saving Triangles [07/11 02:56:03]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:01:02<00:00,  8.19it/s, Loss=0.03276]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.06689600126915857 PSNR 21.1059603942068 SSIM 0.8028088729632528 LPIPS 0.20955266999570946 [07/11 03:50:02]
+
+[ITER 30000] Evaluating train: L1 0.030639440566301347 PSNR 26.793786239624026 SSIM 0.920707142353058 LPIPS 0.10814532339572908 [07/11 03:50:03]
+
+[ITER 30000] Saving Triangles [07/11 03:50:03]                                                        
+Training is done [07/11 03:50:07]                                                                     
+
+Training complete. [07/11 03:50:07]              
+
+=== Running experiment: truck ===                                                                     
+CLI: /home/guest/miniconda3/envs/triangle_splatting/bin/python /home/guest/repos/triangle-splatting/train.py --eval --resolution 1 --model_path /home/guest/repos/triangle-splatting/output/experiments/truc
+k --source_path /home/guest/repos/dataset/assets/truck
+Optimizing /home/guest/repos/triangle-splatting/output/experiments/truck                                                                                                                                    
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]                                                                                                                                      
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the fut
+ure, please use 'weights' instead.
+  warnings.warn(                                   
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0
+.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weigh
+ts.                                                
+  warnings.warn(msg)                               
+Loading model from: /home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+/home/guest/miniconda3/envs/triangle_splatting/lib/python3.11/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#un
+trusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects
+ will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for 
+any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)                                                                                                                            
+Output folder: /home/guest/repos/triangle-splatting/output/experiments/truck [07/11 03:50:10]                                                                                                               
+Tensorboard not available: not logging progress [07/11 03:50:10]                                                                                                                                            
+Reading camera 251/251 [07/11 03:50:11]                                                               
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [07/11 03:50:11]                                                                                                        
+Loading Training Cameras [07/11 03:50:11]                                                             
+Loading Test Cameras [07/11 03:50:12]                                                                 
+Scene is large, we increase the threshold [07/11 03:50:13]                                                                                                                                                  
+Training progress:  23%|███████▉                          | 7000/30000 [05:38<44:28,  8.62it/s, Loss=0.07118]                                                                                               
+[ITER 7000] Evaluating test: L1 0.04291167511837557 PSNR 23.43325048685074 SSIM 0.818313742056489 LPIPS 0.238831524271518 [07/11 03:55:53]
+
+[ITER 7000] Evaluating train: L1 0.03901514261960984 PSNR 24.167037582397462 SSIM 0.8299419641494752 LPIPS 0.22334524095058442 [07/11 03:55:53]
+
+[ITER 7000] Saving Triangles [07/11 03:55:53]                                                         
+Training progress: 100%|███████████████████████████████| 30000/30000 [1:01:23<00:00,  8.15it/s, Loss=0.03382]                                                                                               
+
+[ITER 30000] Evaluating test: L1 0.035027484758757055 PSNR 25.01200270652771 SSIM 0.8816404026001692 LPIPS 0.11837062775157392 [07/11 04:51:38]
+
+[ITER 30000] Evaluating train: L1 0.023752764239907267 PSNR 28.12155227661133 SSIM 0.9363897323608399 LPIPS 0.07285230308771133 [07/11 04:51:38]
+
+[ITER 30000] Saving Triangles [07/11 04:51:38]                                                        
+Training is done [07/11 04:51:42]                                                                     
+
+Training complete. [07/11 04:51:42]                                        
