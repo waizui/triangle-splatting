@@ -1,5 +1,4 @@
-"""Utility script for running multiple training configurations.
-"""
+"""Utility script for running multiple training configurations."""
 
 from __future__ import annotations
 
@@ -74,48 +73,41 @@ def args_to_cli(arg_mapping: dict[str, Any]) -> list[str]:
 EXPERIMENTS: list[Experiment] = [
     Experiment(
         name="bicycle",
-        args={},
+        args={"resolution": 4},
     ),
     Experiment(
         name="garden",
-        args={},
+        args={"resolution": 4},
     ),
     Experiment(
         name="stump",
-        args={},
+        args={"resolution": 4},
     ),
     Experiment(
         name="bonsai",
-        args={},
+        args={"resolution": 2},
     ),
     Experiment(
         name="counter",
-        args={},
+        args={"resolution": 2},
     ),
     Experiment(
         name="room",
-        args={},
+        args={"resolution": 2},
     ),
     Experiment(
         name="kitchen",
-        args={},
+        args={"resolution": 2},
+        
     ),
     Experiment(
         name="train",
-        args={},
+        args={"resolution": 1},
     ),
     Experiment(
         name="truck",
-        args={},
+        args={"resolution": 1},
     ),
-    # Experiment(
-    #     name="drjohnson",
-    #     args={},
-    # ),
-    # Experiment(
-    #     name="playroom",
-    #     args={},
-    # ),
 ]
 
 
