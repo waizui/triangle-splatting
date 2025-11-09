@@ -19,6 +19,15 @@ BASE_ARGS: dict[str, Any] = {
 }
 
 
+class _FlagOnly:
+    """Sentinel for CLI switches that do not take a value."""
+
+    __slots__ = ()
+
+
+FLAG = _FlagOnly()
+
+
 @dataclass(frozen=True)
 class Experiment:
     """Definition of a single training configuration."""
@@ -55,6 +64,9 @@ def args_to_cli(arg_mapping: dict[str, Any]) -> list[str]:
             continue
 
         flag = f"--{key}"
+        if value is FLAG:
+            cli_args.append(flag)
+            continue
         if isinstance(value, bool):
             if value:
                 cli_args.append(flag)
@@ -76,6 +88,7 @@ EXPERIMENTS: list[Experiment] = [
         args={
             "resolution": 4,
             "max_shapes": 6400000,
+            "outdoor": FLAG,
         },
     ),
     Experiment(
@@ -83,6 +96,7 @@ EXPERIMENTS: list[Experiment] = [
         args={
             "resolution": 4,
             "max_shapes": 5200000,
+            "outdoor": FLAG,
         },
     ),
     Experiment(
@@ -90,6 +104,7 @@ EXPERIMENTS: list[Experiment] = [
         args={
             "resolution": 4,
             "max_shapes": 4750000,
+            "outdoor": FLAG,
         },
     ),
     Experiment(
@@ -125,6 +140,7 @@ EXPERIMENTS: list[Experiment] = [
         args={
             "resolution": 1,
             "max_shapes": 2500000,
+            "outdoor": FLAG,
         },
     ),
     Experiment(
@@ -132,6 +148,7 @@ EXPERIMENTS: list[Experiment] = [
         args={
             "resolution": 1,
             "max_shapes": 2000000,
+            "outdoor": FLAG,
         },
     ),
 ]
