@@ -73,40 +73,66 @@ def args_to_cli(arg_mapping: dict[str, Any]) -> list[str]:
 EXPERIMENTS: list[Experiment] = [
     Experiment(
         name="bicycle",
-        args={"resolution": 4},
+        args={
+            "resolution": 4,
+            "max_shapes": 6400000,
+        },
     ),
     Experiment(
         name="garden",
-        args={"resolution": 4},
+        args={
+            "resolution": 4,
+            "max_shapes": 5200000,
+        },
     ),
     Experiment(
         name="stump",
-        args={"resolution": 4},
+        args={
+            "resolution": 4,
+            "max_shapes": 4750000,
+        },
     ),
     Experiment(
         name="bonsai",
-        args={"resolution": 2},
+        args={
+            "resolution": 2,
+            "max_shapes": 3000000,
+        },
     ),
     Experiment(
         name="counter",
-        args={"resolution": 2},
+        args={
+            "resolution": 2,
+            "max_shapes": 2500000,
+        },
     ),
     Experiment(
         name="room",
-        args={"resolution": 2},
+        args={
+            "resolution": 2,
+            "max_shapes": 2100000,
+        },
     ),
     Experiment(
         name="kitchen",
-        args={"resolution": 2},
-        
+        args={
+            "resolution": 2,
+            "max_shapes": 2400000,
+        },
     ),
     Experiment(
         name="train",
-        args={"resolution": 1},
+        args={
+            "resolution": 1,
+            "max_shapes": 2500000,
+        },
     ),
     Experiment(
         name="truck",
-        args={"resolution": 1},
+        args={
+            "resolution": 1,
+            "max_shapes": 2000000,
+        },
     ),
 ]
 
